@@ -9,25 +9,28 @@ html {
   width: 100%;
   height: 100vh;
   transition: 0.3s;
+  
+  // ===== DARK MODE CLASS =====
+  &.dark {
+    background-color: #111827;
+
+    .content__img,
+    .content__title,
+    .content__text,
+    .content__tagline,
+    .content__theme {
+      background-color: #374151;
+    }
+  }
 }
 
-button,
-input {
+button {
+  display: inline-block;
+  background: transparent;
+  padding: 0;
+  margin: 0;
   border: none;
   outline: none;
-}
-
-// ===== DARK MODE CLASS =====
-.dark {
-  background-color: #111827;
-
-  .content__img,
-  .content__title,
-  .content__text,
-  .content__tagline,
-  .content__theme {
-    background-color: #374151;
-  }
 }
 
 // ===== CONTENT SECTION =====
